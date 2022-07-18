@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="asset/icon/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Componente de precios interactivo</title>
+  </head>
+  <body>
+    <h1 class="title">Precios simples basados en el tráfico</h1>
+    <p class="caption">
+      Regístrese para nuestra prueba de 30 días. No se requiere tarjeta de
+      crédito.
+    </p>
+    <main class="content">
+      <div class="header">
+        <p class="header__pageviews">100K Paginas vistas</p>
+        <div class="header__right">
+          <p class="header__worth">$16.00</p>
+          <p class="header__quotient">/ mes</p>
+        </div>
+      </div>
+      <div class="slider">
+        <span class="slider__background"></span>
+        <input type="range" class="slider__bar" min="0" max="100" value="50" step="25"/>
+      </div>
+      <div class="checkbox">
+        <label for="monthly" class="checkbox__label">Facturación Mensual</label>
+        <input type="checkbox" id="monthly" class="checkbox__checkbox" />
+        <label for="monthly" class="checkbox__label">Facturación Anual</label>
+        <span class="checkbox__discount">-25%</span>
+      </div>
+      <div class="footer">
+        <ul class="footer__list">
+          <li class="footer__item">Sitios web ilimitados</li>
+          <li class="footer__item">100% propiedad de los datos</li>
+          <li class="footer__item">Informes por correo electrónico</li>
+        </ul>
+        <a href="#" class="footer__link">Comenzar mi prueba</a>
+      </div>
+    </main>
+    <script src="js/javascript.js"></script>
+  </body>
+</html>
